@@ -19,4 +19,7 @@ This utility is meant to be used inconjunction with the Archon Migration tool to
 5. Change to **[archivesspace directory]/data** and delete the following directories **indexer_state**, **solr_backups**, and **solr_index**.  This will force a re-index of all records when ASpace is resarted.
 6. Restart the ASpace instance and wait for the records to re-indexed.
 
+It is also possible to run this program on any computer which has Java 1.6 or later installed, and which has direct access to the ASpace MYSQL database.
+
+
 
