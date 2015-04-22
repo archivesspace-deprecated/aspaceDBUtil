@@ -13,7 +13,7 @@ import java.sql.Statement;
  *
  * @author nathan
  */
-public class CleanClassifcations {
+public class CleanClassifications {
     /**
      * Method to called to do the actual cleaning up of classifications records
      * @param conn

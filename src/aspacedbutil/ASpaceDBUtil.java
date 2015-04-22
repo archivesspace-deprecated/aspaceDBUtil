@@ -49,7 +49,7 @@ public class ASpaceDBUtil {
      * @throws java.sql.SQLException
      */
     public static void main(String[] args) throws SQLException {
-        System.out.println("ASpaceDBUtil v1.0 (10-15-2014)");
+        System.out.println("ASpaceDBUtil v1.1 (04-21-2015)");
         
         String dbmsURL = "";
         String username = "";
@@ -81,7 +81,8 @@ public class ASpaceDBUtil {
             System.out.println("\n");
             
             DeDupLocations.runTask(connection);
-            CleanClassifcations.runTask(connection);
+            CleanClassifications.runTask(connection);
+            CleanOrphanedArchivalObjects.runTask(connection);
         } catch (SQLException ex) {
             System.out.println("A database error occured\n" + ex.getMessage());
         } finally {

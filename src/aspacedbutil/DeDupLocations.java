@@ -101,7 +101,7 @@ public class DeDupLocations {
                 
                 System.out.println("Number of containers updated: " + rows);
                 
-                // now we must delete the deplicate rows from the locations table
+                // now we must delete the duplicate rows from the locations table
                 String idsToDelete = ids.replace("(" + firstId + ",", "(");
                 String deleteSQL = "DELETE FROM location WHERE id IN " + idsToDelete;
                 System.out.println(deleteSQL);
