@@ -17,7 +17,7 @@ This utility is meant to be used inconjunction with the Archon Migration tool to
 4. From the command line change into the aspaveDBUtil directory and issue the following command: 
   - **java -jar aspaceDBUtil.jar jdbc:mysql://localhost:3306/aspaceDB username password**
   - Replace the jdbc URL, username, and password with those for the ASpace instance.
-  - Add TEST to the command (**java -jar aspaceDBUtil.jar jdbc:mysql://localhost:3306/aspaceDB username password TEST**) to run the program without actually making any database changes.
+  - Use **java -jar aspaceDBUtil.jar jdbc:mysql://localhost:3306/aspaceDB username password TEST** to run the program without actually making any database changes.
 5. Change to **[archivesspace directory]/data** and delete the following directories **indexer_state**, **solr_backups**, and **solr_index**.  This will force a re-index of all records when ASpace is resarted.
 6. Restart the ASpace instance and wait for the records to re-indexed.
 
